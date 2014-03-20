@@ -73,6 +73,9 @@ my @mark_patterns = (
          | ' [^']* '
       )+
    )}x,
+
+   # MJM - match final part of a path
+   qr{ /([^/ ]+) }x
 );
 
 # "correct obvious? crap"-patterns
